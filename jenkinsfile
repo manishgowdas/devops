@@ -25,5 +25,11 @@ pipeline{
             }
             
         }
+        stage('disc details'){
+            steps{
+                sh ''' df -kh '''
+            }
+            
+        }
     }
 }
