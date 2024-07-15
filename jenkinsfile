@@ -22,14 +22,7 @@ pipeline{
         stage('hostname'){
             steps{
                 sh ''' hostname '''
-            }
-            
-        }
-        stage('disc details'){
-            steps{
-                sh ''' df -kh '''
-            }
-            
+            }   
         }
     }
 }
